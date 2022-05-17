@@ -1,0 +1,52 @@
+phpinfo()
+PHP Version => 8.1.5
+
+System => Linux gueye77-Latitude-3420 5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022 x86_64
+Build Date => Apr 21 2022 10:14:45
+Build System => Linux
+Server API => Command Line Interface
+Virtual Directory Support => disabled
+Configuration File (php.ini) Path => /etc/php/8.1/cli
+Loaded Configuration File => /etc/php/8.1/cli/php.ini
+Scan this dir for additional .ini files => /etc/php/8.1/cli/conf.d
+Additional .ini files parsed => /etc/php/8.1/cli/conf.d/10-opcache.ini,
+/etc/php/8.1/cli/conf.d/10-pdo.ini,
+/etc/php/8.1/cli/conf.d/20-calendar.ini,
+/etc/php/8.1/cli/conf.d/20-ctype.ini,
+/etc/php/8.1/cli/conf.d/20-curl.ini,
+/etc/php/8.1/cli/conf.d/20-exif.ini,
+/etc/php/8.1/cli/conf.d/20-ffi.ini,
+/etc/php/8.1/cli/conf.d/20-fileinfo.ini,
+/etc/php/8.1/cli/conf.d/20-ftp.ini,
+/etc/php/8.1/cli/conf.d/20-gettext.ini,
+/etc/php/8.1/cli/conf.d/20-iconv.ini,
+/etc/php/8.1/cli/conf.d/20-phar.ini,
+/etc/php/8.1/cli/conf.d/20-posix.ini,
+/etc/php/8.1/cli/conf.d/20-readline.ini,
+/etc/php/8.1/cli/conf.d/20-shmop.ini,
+/etc/php/8.1/cli/conf.d/20-sockets.ini,
+/etc/php/8.1/cli/conf.d/20-sysvmsg.ini,
+/etc/php/8.1/cli/conf.d/20-sysvsem.ini,
+/etc/php/8.1/cli/conf.d/20-sysvshm.ini,
+/etc/php/8.1/cli/conf.d/20-tokenizer.ini
+
+PHP API => 20210902
+PHP Extension => 20210902
+Zend Extension => 420210902
+Zend Extension Build => API420210902,NTS
+PHP Extension Build => API20210902,NTS
+Debug Build => no
+Thread Safety => disabled
+Zend Signal Handling => enabled
+Zend Memory Manager => enabled
+Zend Multibyte Support => disabled
+IPv6 Support => enabled
+DTrace Support => available, disabled
+
+Registered PHP Streams => https, ftps, compress.zlib, php, file, glob, data, http, ftp, phar
+Registered Stream Socket Transports => tcp, udp, unix, udg, ssl, tls, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3
+Registered Stream Filters => zlib.*, string.rot13, string.toupper, string.tolower, convert.*, consumed, dechunk, convert.iconv.*
+
+This program makes use of the Zend Scripting Language Engine:
+Zend Engine v4.1.5, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.5, Copyright (c), by Zend Technologies

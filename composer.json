@@ -1,0 +1,20 @@
+{
+    "name": "gueye77/po_mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\Core\\": "core/",
+            "App\\Model\\": "models/",
+            "App\\Controller\\": "controllers/",
+            "App\\Exception\\": "exceptions/"
+        }
+    },
+    "authors": [
+        {
+            "name": "adama gueye",
+            "email": "adamagueye451@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
