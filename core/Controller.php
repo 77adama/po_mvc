@@ -11,6 +11,7 @@ class Controller{
     public function render(string $path,array $data=[]){
 
         $data["Constantes"]=Constantes::class;
+        // $data["Professeur"]=Professeur::class;
         $data["request"]=$this->request;
         //dans n'importe quel vue on va metre $constantes:: pour y acceder
         //les requetes aussi

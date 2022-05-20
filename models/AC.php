@@ -21,7 +21,7 @@ class AC extends User{
      public static function findAll():array{
         $db=parent::database();
             $db->connexionBD();
-            $sql="select id,'nom_complet','role','login','password' from ".parent::table()." where role like 'ROLE_AC'";
+            $sql="select * from ".parent::table()." where role like 'ROLE_AC'";
             $result=$db->executeSelect($sql);
             $db->closeConnexion();
             return $result;

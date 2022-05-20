@@ -20,7 +20,21 @@ abstract class Personne extends Model{
     public function __construct(){
         // parent::$table='personne';
     }
-    
+         public static function findAll():array{
+            $db=parent::database();
+                $db->connexionBD();
+                $sql="select* from ".parent::table();
+                $result=$db->executeSelect($sql);
+                $db->closeConnexion();
+                return $result;
+    }
+//     public static function findAll():array{
+//         $sql="select * from ".parent::table() ." where role like ?";
+
+//         return  parent::findBy($sql,[parent::$role]);
+        
+// }
+
     //getters 
     public function getId():int{
         return $this->id;

@@ -1,0 +1,1 @@
+je veux creer une classe

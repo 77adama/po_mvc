@@ -1,4 +1,8 @@
-<div class="card">
+<?php 
+if (1==1) {
+}
+?>
+<div class="card container col-5 bg-secondary">
     <img class="card-img-top" src="holder.js/100x180/" alt="">
     <div class="card-body">
         <h4 class="card-title">Formulaire de Connexion</h4>
@@ -13,7 +17,7 @@
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">connecter</button>
 </form>
         </p>
     </div>

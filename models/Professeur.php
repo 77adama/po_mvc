@@ -26,10 +26,18 @@ class Professeur extends Personne{
 
 
         //redefinition
+    //     public static function findAll():array{
+    //         $db=parent::database();
+    //             $db->connexionBD();
+    //             $sql="select* from ".parent::table()." where role like 'ROLE_PROFESSEUR'";
+    //             $result=$db->executeSelect($sql);
+    //             $db->closeConnexion();
+    //             return $result;
+    // }
         public static function findAll():array{
-            $sql="select * from ? where role like 'ROLE_PROFESSEUR'";
+            $sql="select * from ".parent::table() ." where role like ?";
 
-            return  parent::findBy($sql,[parent::table()],true);
+            return  parent::findBy($sql,['ROLE_PROFESSEUR']);
     }
    
     public function insert():int{

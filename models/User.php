@@ -77,13 +77,14 @@ abstract class User extends Personne{
 
         //redefinition
         public static function findAll():array{
-        //      $db=parent::database();
-        //     $db->connexionBD();
-        //     $sql="select * from ".parent::table()." where role not like 'ROLE_PROFESSEUR'";
-        //     $result=$db->executeSelect($sql);
-        //     $db->closeConnexion();
-         $sql="select * from ".parent::table()." where role not like 'ROLE_PROFESSEUR'";
-                return  parent::findBy($sql);
+             $db=parent::database();
+            $db->connexionBD();
+            $sql="select * from ".parent::table()." where role not like 'ROLE_PROFESSEUR'";
+            $result=$db->executeSelect($sql);
+            $db->closeConnexion();
+            return $result;
+        //  $sql="select * from ".parent::table()." where role not like 'ROLE_PROFESSEUR'";
+        //         return  parent::findBy($sql);
                 
         } 
 }

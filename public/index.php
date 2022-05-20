@@ -1,4 +1,9 @@
 <?php
+require_once("../core/erreur.php");
+erreur();
+//  ini_set('display_errors', 1);
+//    ini_set('display_startup_errors', 1);
+//   error_reporting(E_ALL);
 //1inclure le phichier de la class
 // use App\Controller\SecurityController;
 // use App\Controller\ClasseController;
@@ -7,8 +12,10 @@
 require("../vendor/autoload.php");
 require_once("../core/functions.php");
 require_once("../routes/route.web.php");
-use App\Model\Etudiant; //et ilva faire=> require_once("../models/Professeur.php");
-use App\Model\AC;
+// use App\Model\Professeur;
+// use App\Model\Etudiant; //et ilva faire=> require_once("../models/Professeur.php");
+// use App\Model\AC;
+// use App\Model\RP;
 
 
 
@@ -69,20 +76,30 @@ use App\Model\AC;
 // User::findAll(); //select * from personne where role not like ROLE_PROFESEUR
     // Classe::findById(1);
     // $ac=new AC();
-    // $ac->setNomComplet("MODOU faye");
-    // $ac->setLogin("mf");
-    // $ac->setPassword("mf");
+    // $ac->setNomComplet("khady seck");
+    // $ac->setLogin("gf");
+    // $ac->setPassword("foshj");
     // $ac->insert();
+    // $ac=new RP();
+    // $ac->setNomComplet("ablayd seck");
+    // $ac->setLogin("grf2");
+    // $ac->setPassword("fodljshj");
+    // $ac->insert();
+    // $pr=new Professeur();
+    // $pr->setNomComplet("Abdou fall");
+    // $pr->setGrade("ingenieur");
+    // $pr->insert();
+    // var_dump(Professeur());
     // dd($ac->insert());
-    $etudiant= new Etudiant();
-    $etudiant->setNomComplet("ALla ndaw");
-    $etudiant->setLogin("an");
-    $etudiant->setPassword("an");
-    $etudiant->setMatricule("alag");
-    $etudiant->setSexe("masculin");
-    $etudiant->setAdresse("thiaroye");
-    $etudiant->insert();
-    // echo "<pre>";
+    // $etudiant= new Etudiant();
+    // $etudiant->setNomComplet("ALla ndaw");
+    // $etudiant->setLogin("annbv");
+    // $etudiant->setPassword("angf");
+    // $etudiant->setMatricule("24a");
+    // $etudiant->setSexe("M");
+    // $etudiant->setAdresse("thiaroye");
+    // $etudiant->insert();
+    // // echo "<pre>";
     // var_dump($etudiant);
     // die();
     // echo $etudiant->insert();
@@ -91,8 +108,9 @@ use App\Model\AC;
     // dd($userConnect);
     // AnneeScolaire::findAll();
 // AC::findAll(); //select * from personne where role like ROLE_AC
+// var_dump(AC::findAll());
 // Professeur::findAll(); //select * from personne where role like ROLE_PROFESEUR
-
+// var_dump(Professeur::findAll());
 //composer => outil de gestionnaire de dependance
 //dependance => c'est toute les classes externes que l'on peut ajouter dans 
 //son projet pour avoir des fonctionalites supplementaires
