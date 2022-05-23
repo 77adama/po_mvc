@@ -10,7 +10,9 @@ use App\Controller\RPController;
 use App\Controller\UserController;
 use App\Controller\EtudiantController;
 use App\Controller\InscriptionController;
+use App\Controller\AcceuilController;
 use App\Exception\RouteNotFoundException;
+
 
 //resolution des routes
 $router=new Router();
@@ -20,6 +22,7 @@ $router=new Router();
 //definition des routes => c'est l'ajout des routes dans le tableau
 $router->route('/login',[SecurityController::class,"authentification"]);
 $router->route('/logout',[SecurityController::class,"deconexion"]);
+$router->route('/acceuil',[AcceuilController::class,"acceuil"]);
 $router->route('/classes',[ClasseController::class,"listerClasse"]);
 $router->route('/add-classe',[ClasseController::class,"creerClasse"]);
 $router->route('/personnes',[PersonneController::class,"lister"]);

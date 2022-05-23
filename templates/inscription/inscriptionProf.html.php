@@ -1,6 +1,6 @@
 
 
-<div class="card container col-5 bg-secondary">
+<div class="card container col-5 bg-secondary mt-5">
     <img class="card-img-top" src="holder.js/100x180/" alt="">
     <div class="card-body">
         <h4 class="card-title">Formulaire d'inscription</h4>

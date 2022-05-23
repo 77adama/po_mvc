@@ -1,3 +1,7 @@
+ <?php 
+  //  use App\Core\HtmlProvider;
+  //  HtmlProvider::navInfo($title,"info",5,$btn,"success","/addProf");
+?> 
 <!-- <ul class="nav justify-content-end mt-1">
         <li class="nav-item">
             <a class="nav-link active" href="#">liste des professeur</a>
@@ -7,7 +11,8 @@
         </li>
     </ul> -->
 
- <h4 class="bg-info"><?php echo $titre ?></h4> 
+ <!-- <h4 class="bg-info py-4"><?php //echo $titre ?></h4>  -->
+ <h4 class="bg-info py-4"> <p>Liste des professeurs</p> <a href="inscrireProf">ajouter prof</a></h4>
 <div class="container mt-5 ml-5">
 <table class="table table-bordeless">
         <tr class="bg-info">
