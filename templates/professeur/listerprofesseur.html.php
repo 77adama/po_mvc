@@ -9,10 +9,10 @@
         <li class="nav-item">
             <a class="nav-link disabled" href="#">ajout</a>
         </li>
-    </ul> -->
+    </ul> --> 
 
  <!-- <h4 class="bg-info py-4"><?php //echo $titre ?></h4>  -->
- <h4 class="bg-info py-4"> <p>Liste des professeurs</p> <a href="inscrireProf">ajouter prof</a></h4>
+ <h4 class="bg-info py-4 d-flex justify-content-between"> <p>Liste des professeurs</p> <a href="inscrireProf">ajouter prof</a></h4>
 <div class="container mt-5 ml-5">
 <table class="table table-bordeless">
         <tr class="bg-info">

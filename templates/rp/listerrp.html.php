@@ -9,7 +9,6 @@
             <th class="text-center">role</th>
             <th class="text-center">parametre</th>
         </tr>
-
         <?php
         $i=1;
             foreach ($rp as $rp){ ?>

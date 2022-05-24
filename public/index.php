@@ -1,4 +1,6 @@
 <?php
+session_start();
+// var_dump($_SESSION);
 require_once("../core/erreur.php");
 erreur();
 //  ini_set('display_errors', 1);
