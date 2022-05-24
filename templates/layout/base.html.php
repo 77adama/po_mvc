@@ -18,8 +18,7 @@
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Deconexion</a>
         </li>
-    </ul> -->
-
+amm@gmail.com
     <!-- <nav class="nav bg-success nav-fill h4 py-3 bg-success">
         <a class="nav-link active text-white bg-warning" aria-current="page" href="listeprof">Liste des professeurs</a>
         <a class="nav-link text-white" href="#">Much longer nav link</a>

@@ -29,6 +29,7 @@ $router->route('/personnes',[PersonneController::class,"lister"]);
 $router->route('/ajoumodule',[ModuleController::class,"ajouterModule"]);
 $router->route('/affecterclasse',[ProfesseurController::class,"affecterClasse"]);
 $router->route('/listeprof',[ProfesseurController::class,"listerProfesseur"]);
+$router->route('/detailprof',[ProfesseurController::class,"detail"]);
 $router->route('/listerac',[ACController::class,"listerAC"]);
 $router->route('/listeretudiant',[EtudiantController::class,"listerEtudiant"]);
 $router->route('/listerrp',[RPController::class,"listerRP"]);

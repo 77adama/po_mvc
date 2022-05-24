@@ -1,3 +1,7 @@
+<?php
+    use App\Core\function;
+?>
+ 
  <nav class="nav bg-success nav-fill h4 py-3 bg-success justify-content-between">
         <!-- <a class="nav-link active text-white "  href="listeprof">Liste des professeurs</a>
         <a class="nav-link text-white" href="listerrp">liste RP</a>
@@ -31,7 +35,7 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gerer les Professeurs</a>
+          <a class="nav-link dropdown-toggle <?=hidden(['ROLE_ETUDIANT'])?>" id="navbarDropdown  " role="button" data-bs-toggle="dropdown" aria-expanded="false">Gerer les Professeurs</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>

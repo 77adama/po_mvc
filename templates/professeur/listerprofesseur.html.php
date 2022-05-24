@@ -30,6 +30,7 @@
             <td class="font-weight-bold"><?= $prof->nom_complet ?></td>
             <td><?= $prof->grade ?></td>
             <td  class="text-center">
+                <a href="/detailprof/<?=$prof->id?>" class="btn btn-secondary btn-sm">detailler</a>
                 <button class="btn btn-warning btn-sm">Modifier</button>
                 <button class="btn btn-danger btn-sm">Supprimer</button>
             </td>

@@ -27,6 +27,10 @@ class Role{
         return self::is_connect() && ($_SESSION['user-connect']['role']="ROLE_Etudiant" || $_SESSION['user-connect']['role']="ROLE_AC" || $_SESSION['user-connect']['role']="ROLE_RP");
             
     }
+    public static function getRole(){
+        return $_SESSION['user-connect']->role;
+            
+    }
 }
 
 

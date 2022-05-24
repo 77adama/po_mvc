@@ -51,7 +51,7 @@ public function insert():int{
         //?=>jocker
         //les jockers ont ds positions dont 1ere(?)=>0,?=>1
         $sql="select * from ".self::table()." where id=?"; 
-        $result=$db->executeSelect($sql,[$id]);
+        $result=$db->executeSelect($sql,[$id],true);
         $db->closeConnexion();
         return $result;
     }
