@@ -9,7 +9,6 @@ class ACController  extends Controller{
         $ac = AC::findAll();
        
         $data = [
-            
             "ac" => $ac
         ];
         $this->render('ac/listerac.html.php',$data);
