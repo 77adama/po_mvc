@@ -1,4 +1,15 @@
+
+
 <section class="vh-100" style="background-color:  #9A616D;">
+
+<nav class="nav bg-success nav-fill h2 py-3 justify-content-between">
+        <!-- <a class="nav-link active text-white "  href="listeprof">Liste des professeurs</a>
+        <a class="nav-link " href="listerrp">liste RP</a> -->
+        <a class="nav-link " href="listeprof">Liste des professeurs</a>
+        <!-- <a class="nav-link text-white" href="listeretudiant" >liste des Etudiants</a> -->
+        <a class="nav-link " href="logout">Deconnecter</a>
+</nav>
+
   <div class="container py-3 h-12 ">
     <div class="row d-flex justify-content-center align-items-center h-50">
       <div class="col col-xl-10">
