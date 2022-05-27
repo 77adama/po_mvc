@@ -12,15 +12,15 @@ class Etudiant extends User{
  
     
 
-    public function insert():int{
-    $db=parent::database();
-    $db->connexionBD();
-    // var_dump($db) ;die;
-    $sql="INSERT INTO `personne` (`nom_complet`,`role`, login, password,`matricule`,`sexe`,`adresse`) VALUES (?,?,?,?,?,?,?)";
-    $results=$db->executeUpdate($sql,[$this->nomComplet,parent::$role,$this->login,$this->password,$this->matricule,$this->sexe,$this->adresse]);
-    $db->closeConnexion();
-    return $results;
-}
+//     public function insert():int{
+//     $db=parent::database();
+//     $db->connexionBD();
+//     // var_dump($db) ;die;
+//     $sql="INSERT INTO `personne` (`nom_complet`,`role`, login, password,`matricule`,`sexe`,`adresse`) VALUES (?,?,?,?,?,?,?)";
+//     $results=$db->executeUpdate($sql,[$this->nomComplet,parent::$role,$this->login,$this->password,$this->matricule,$this->sexe,$this->adresse]);
+//     $db->closeConnexion();
+//     return $results;
+// }
     public static function findAll():array{
          $db=parent::database();
         $db->connexionBD();
@@ -98,7 +98,22 @@ class Etudiant extends User{
 //         return [];
 // }
 
+public function insert():int{
+    $db=parent::database();
+    $db->connexionBD();
+    // var_dump($db) ;die;
+    $sql="INSERT INTO `personne` (`nom_complet`,`role`, login, password,`sexe`,`adresse`) VALUES (?,?,?,?,?,?)";
+    $results=$db->executeUpdate($sql,[$this->nomComplet,parent::$role,$this->login,$this->password,$this->matricule,$this->sexe,$this->adresse]);
+    $db->closeConnexion();
+    return $results;
+}
 
-
-
+public function update():int{
+    $db=parent::database();
+    $db->connexionBD();
+    $sql="UPDATE 'personne' SET 'matricule'=? WHERE 'id'=?";
+    $results=$db->executeUpdate($sql,[$this->matricule,$this->id]);
+    $db->closeConnexion();
+    return $results;
+}
 }

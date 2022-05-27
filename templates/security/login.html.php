@@ -3,13 +3,13 @@
   
 // }
 ?>
-  <ul class="nav justify-content-center mt-1 bg-success py-3">
+  <ul class="nav justify-content-center mt-1 bg-success py-3 ">
         <li class="nav-item">
             <h3 class="nav-link h2 text-white"  
             >PO-ODC</h3>
         </li>
     </ul>
-<div class="card container col-5 bg-secondary mt-5">
+<div class="card container col-5 bg-secondary mt-5 bg-success">
     <img class="card-img-top" src="holder.js/100x180/" alt="">
     <div class="card-body">
         <h4 class="card-title text-white">Formulaire de Connexion</h4>

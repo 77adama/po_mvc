@@ -38,6 +38,7 @@ $router->route('/inscrireProf',[ProfesseurController::class,"inscriptionProf"]);
 $router->route('/inscrireac',[ACController::class,"inscriptionAC"]);
 $router->route('/inscrirerp',[RPController::class,"inscriptionRP"]);
 $router->route('/inscrireetudiant',[EtudiantController::class,"inscriptionEtudiant"]);
+$router->route('/inscriretudiant',[InscriptionController::class,"inscrireEtudiant"]);
 
 //resolution des routes => rechercher si la route se trouve dans le tableau listerEtudiant
 try{

@@ -10,7 +10,7 @@ function dd($data):void{
 }
 function hidden(array $datas){
     foreach ($datas as $data) {
-       return (Role::getRole()==$data)?"d-none":"";
+       return (Role::getRole()==$data)?'d-none':'';
     }
 }
 function hiddenNave(){

@@ -32,7 +32,7 @@ class Router{
                 // call_user_func(array($ctrl,$action));
                 //Les vues accessibles sans connexion
                 // Pour que toutes les pages accessibles ajouter * dans le tableau
-                $free = ["SecurityController/authentification","*"];
+                $free = ["SecurityController/authentification"];
                 $freetest=explode("\\",$ctrl::class)[2]."/".$action;
                 // dd($ctrl::class);
                 if (in_array("*",$free) || in_array($freetest,$free)) { //les Pages accessibles par Tout le monde

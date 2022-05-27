@@ -3,7 +3,7 @@
     <div class="card-body">
         <h4 class="card-title">Formulaire d'inscription</h4>
         <p class="card-text">
-        <form action="inscrireetudiant" method="POST">
+        <form action="inscriretudiant" method="POST">
      <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label" >Nom Complet</label>
         <input name="nomComplet" type="text" class="form-control" id="exampleInputPassword1">
@@ -32,6 +32,18 @@
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">adresse</label>
     <input name="adresse" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Classe</label>
+    <!-- <input name="adresse" type="text" class="form-control" id="exampleInputPassword1"> -->
+    <select name="classe" class="form-control" id="exampleInputPassword1">
+        <option disabled selected >--Veuillez choisir une Classe--</option>
+        <?php 
+            foreach ($classes as $classe) { ?>
+                <option value="<?=$classe->id_classe ?>" ><?=$classe->libelle?> </option>
+        <?php    }
+        ?>
+    </select>
   </div>
   <button type="submit" class="btn btn-primary">s'incrire</button>
 </form>

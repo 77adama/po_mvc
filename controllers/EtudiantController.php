@@ -23,18 +23,34 @@ class EtudiantController extends Controller{
         }else{
            /*  var_dump($_POST);
             die; */
-            extract($_POST);
+        //     extract($_POST);
+        //         $etu=new Etudiant();
+        //         $etu->setNomComplet($nomComplet);
+        //         $etu->setLogin($login);
+        //         $etu->setPassword($password);
+        //         $etu->setMatricule($matricule);
+        //         $etu->setSexe($sexe);
+        //         $etu->setAdresse($adresse);
+        //         $etu->insert();
+        // $this->render('inscription/inscriptionEtudiant.html.php');
+
+                    extract($_POST);
                 $etu=new Etudiant();
                 $etu->setNomComplet($nomComplet);
                 $etu->setLogin($login);
                 $etu->setPassword($password);
-                $etu->setMatricule($matricule);
+                // $etu->setMatricule($matricule);
                 $etu->setSexe($sexe);
                 $etu->setAdresse($adresse);
-                $etu->insert();
+                $id=$etu->insert();
+                if ($id>0) {
+                    $insctription=new inscription();
+                    $insctription->setEtudiant_id($id);
+                    $insctription->setClasse_id($classe);
+                }
         $this->render('inscription/inscriptionEtudiant.html.php');
     
-            // $this->render('professeur/listerprofesseur.html.php');
+            // $this->render('professeur/listerprofesseur.html.php'); 
         }
     }
 }
